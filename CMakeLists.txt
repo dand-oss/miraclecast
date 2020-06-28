@@ -25,8 +25,8 @@ set(DATADIR "${CMAKE_INSTALL_PREFIX}/share" CACHE STRING "shared data dir")
 
 find_package(PkgConfig)
 pkg_check_modules (GLIB2 REQUIRED glib-2.0)
-pkg_check_modules (UDEV REQUIRED libudev)
-pkg_check_modules (SYSTEMD REQUIRED libsystemd)
+pkg_check_modules (UDEV REQUIRED udev)
+pkg_check_modules (SYSTEMD REQUIRED systemd)
 
 CONFIGURE_FILE(${CMAKE_SOURCE_DIR}/config.h.cmake ${CMAKE_BINARY_DIR}/config.h)
 

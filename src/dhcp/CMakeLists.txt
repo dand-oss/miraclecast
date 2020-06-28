@@ -15,7 +15,7 @@ add_executable(miracle-dhcp ${miracle-dhcp_SRCS})
 
 find_package(PkgConfig)
 pkg_check_modules (GLIB2 REQUIRED glib-2.0)
-pkg_check_modules (UDEV REQUIRED libudev)
+pkg_check_modules (UDEV REQUIRED udev)
 link_directories( ${UDEV_LIBRARY_DIRS})
 include_directories( ${UDEV_INCLUDE_DIRS})
 target_link_libraries(miracle-dhcp ${UDEV_LIBRARIES})
